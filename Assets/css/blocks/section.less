@@ -1,0 +1,134 @@
+// main: ../style.less
+
+.section {
+    display: flex;
+    justify-content: center;
+    background: url("../images/section/BG.png") center no-repeat;
+
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 270px;
+
+    &--2 {
+        background: url("../images/section/flowers.png") center no-repeat;
+        background-size: cover;
+
+        margin-bottom: 60px;
+    }
+}
+
+.section__header {
+    text-align: center;
+    padding: 60px 0;
+
+    @media @mobile {
+        padding: 10px 0 0 0;
+    }
+}
+
+.section__subtitle {
+    font-size: 75.96px;
+    font-family: brushwell;
+    color: @black;
+    line-height: 1.1;
+
+    @media @mobile {
+        font-size: 60px;
+    }
+
+    @media @mobile-sm {
+        font-size: 50px;
+    }
+
+    @media @mobile-supersm {
+        font-size: 40px;
+    }
+}
+
+.section__title {
+    font-size: 66.92px;
+    font-family: velvet;
+
+    position: relative;
+
+    @media @mobile {
+        font-size: 50px;
+    }
+
+    @media @mobile-sm {
+        font-size: 30px;
+    }
+
+    @media @mobile-supersm {
+        font-size: 25px;
+    }
+
+    &:after {
+    content: "";
+    width: 668px;
+    height: 1px;
+    position: absolute;
+    margin: 0 auto;
+    background-color: @white;
+
+
+    right: 0;
+    left: 0;
+    bottom: -8px;
+    z-index: 1;
+    }
+
+    &--2 {
+        &:after {
+            content: "";
+            width: 228px;
+            height: 1px;
+            position: absolute;
+            margin: 0 auto;
+            background-color: @white;
+
+
+            right: 0;
+            left: 0;
+            bottom: -8px;
+            z-index: 1;
+            }
+
+    }
+}
+
+.section__text {
+    font-size: 28.7px;
+    font-family: velvet;
+    color: @gray;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @media @mobile {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    @media @mobile-sm {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    @media @mobile-supersm {
+        font-size: 17px;
+    }
+
+    &--2 {
+        font-size: 25px;
+        max-width: 905px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        @media @mobile-supersm {
+            font-size: 15px;
+        }
+    }
+
+}

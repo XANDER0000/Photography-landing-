@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.works {
+    display: flex;
+
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    padding: 0 15px;
+
+}
+
+.works__item {
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 26px;
+
+    @media @mobile {
+        margin-bottom: 5px;
+    }
+
+    &--big {
+        max-width: 364px;
+        max-height: 542px;
+    }
+
+    &--sm {
+        max-width: 364px;
+        max-height: 257px;
+    }
+}
+
+.works__image {
+    width: 100%;
+}
+
+.works__col {
+    margin-right: 26px;
+
+    @media @mobile {
+        margin-right: 5px;
+    }
+}
+
+/* Slider ============*/
+#slider-2 .slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    z-index: 2;
+
+
+    li {
+        margin: 0 5px;
+
+        &.slick-active
+        button {
+            background-color: #605454;
+        }
+
+    }
+
+    button {
+        width: 15px;
+        height: 15px;
+
+        padding: 0;
+
+        border: 1px solid;
+        border-radius: 50%;
+        background: transparent;
+        background-color: #a3958e;
+
+        font-size: 0;
+        color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+}

@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.footer {
+    background: url("../images/footer/bg.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer__inner {
+    padding: 50px 0 35px 0;
+
+    @media @mobile {
+        padding: 20px 0 15px 0;
+    }
+}
+
+.footer__social {
+    margin-top: 40px;
+
+    & a:last-child .footer__social-link:last-child {
+        margin-right: 0;
+    }
+
+    @media @computer-sm-h {
+        margin-top: 20px;
+    }
+}
+
+.footer__social-link {
+    color: #949092;
+    font-size: 20px;
+    margin-right: 25px;
+    cursor: pointer;
+
+    transition: color .2s linear, transform .2s linear;
+
+    &:hover {
+        color: @white;
+        transform: scale(1.4);
+    }
+
+    @media @computer-sm-h {
+        margin-right: 22px;
+    }
+}
+
+.footer__text {
+    text-align: center;
+    color: @white;
+    font-size: 18.75px;
+    font-family: louis;
+
+    margin: 45px auto 25px;
+    max-width: 500px;
+
+    @media @computer-sm-h {
+        margin-top: 25px;
+    }
+}
+
+.footer__copyright {
+    text-align: center;
+    color: @white;
+    font-size: 14.33px;
+    font-family: louis;
+}

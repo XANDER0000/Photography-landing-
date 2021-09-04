@@ -1,0 +1,136 @@
+// main: ../style.less
+.testimonials {
+    margin-top: 70px;
+    display: flex;
+
+    .container {
+        position: relative;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            margin: 0 auto;
+            background-color: @black;
+
+
+            right: 0;
+            left: 0;
+            top: -30px;
+            z-index: 1;
+            }
+    }
+}
+
+.testimonials__header {
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.testimonials__title {
+    font-size: 66.67px;
+    font-family: brushwell;
+    color: @black;
+
+    @media @mobile-supersm {
+        font-size: 50px;
+    }
+}
+
+.testimonials__subtitle {
+    font-size: 37.5px;
+    font-family: nextart;
+    color: @black;
+
+    @media @mobile-supersm {
+        font-size: 30px;
+    }
+}
+
+.testimonials2 {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @notebook {
+        justify-content: center;
+    }
+}
+
+.testimonials__item {
+    width: 33.33333%;
+    position: relative;
+    max-width: 328px;
+
+    margin: 180px 0 45px 0;
+
+    @media @notebook {
+        width: 50%;
+        justify-content: center;
+
+        margin: 180px 10px 45px 10px;
+    }
+
+    @media @mobile {
+        width: 100%;
+    }
+
+    @media @mobile-supersm {
+        margin: 170px 0 35px 0;
+    }
+}
+
+.testimonials__item-inner {
+    padding: 70px 35px 30px 35px;
+    border: 1px solid @black;
+    box-shadow: -1px -1px 0 #c1c1c1;
+
+    @media @mobile-supersm {
+        padding: 60px 15px 15px 15px;
+    }
+}
+.testimonials__item-img {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 100%;
+    top: -150px;
+    left: 0;
+    right: 0;
+
+    width: 210px;
+    height: 210px;
+
+    border-radius: 50%;
+    outline: none;
+
+    @media @mobile-supersm {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+.testimonials__item-name {
+    margin-bottom: 30px;
+    font-size: 18.75px;
+    font-family: velvet;
+    color: @black;
+
+    @media @mobile-supersm {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+.testimonials__item-text {
+    font-size: 18.75px;
+    line-height: 1.6;
+    font-family: louis;
+    color: @black;
+
+    @media @mobile-supersm {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}

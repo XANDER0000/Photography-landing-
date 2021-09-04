@@ -1,0 +1,68 @@
+// compress: true
+@import "vars";
+
+@font-face {
+    font-family: nextart;
+    src: url(../fonts/NEXT_ART_Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: velvet;
+    src: url(../fonts/redvelvetregular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: brushwell;
+    src: url(../fonts/Brushwell.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: louis;
+    src: url(../fonts/LouisGeorgeCafe.ttf) format('truetype');
+}
+
+html, body {
+    overflow-x: hidden
+}
+
+
+body {
+    margin: 0;
+
+    font-family: nextart;
+
+    font-size: 14px;
+    color: @white;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+h1, h2, h3, h4, h4, h5 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks ======================*/
+@import "blocks/navigation.less";
+@import "blocks/intro.less";
+@import "blocks/container.less";
+@import "blocks/about.less";
+@import "blocks/btn.less";
+@import "blocks/section.less";
+@import "blocks/works.less";
+@import "blocks/modal.less";
+@import "blocks/videos.less";
+@import "blocks/testimonials.less";
+@import "blocks/contact.less";
+@import "blocks/footer.less";
+
+@import "helpers";

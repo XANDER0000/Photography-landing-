@@ -1,0 +1,80 @@
+// main: ../style.less
+
+.about {
+    padding: 100px 0;
+
+    @media @mobile {
+        padding: 80px 0;
+    }
+
+    @media @mobile-supersm {
+        padding: 50px 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+    max-width: 905px;
+    margin: 0 auto;
+
+    @media @mobile {
+        max-width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+.about__photo {
+    margin-right: 45px;
+
+    @media @mobile {
+        margin: 0;
+    }
+}
+
+.about__img {
+    width: 260px;
+    height: 260px;
+
+    @media @mobile-supersm {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.about__content {
+    padding: 10px 0 30px 20px;
+
+
+    border-left: 1px solid @black;
+
+    @media @mobile {
+        border: none;
+        padding: 10px 0 0;
+    }
+}
+
+.about__title {
+    font-size: 75.96px;
+    font-family: brushwell;
+    color: @black;
+
+    @media @mobile-supersm {
+        font-size: 50px;
+    }
+}
+
+.about__text {
+    font-size: 18.75px;
+    line-height: 1.6;
+    font-family: louis;
+    color: @black;
+
+    margin-bottom: 30px;
+
+    @media @mobile-supersm {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+}
